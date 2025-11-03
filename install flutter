@@ -1,0 +1,88 @@
+مرحله ۱: مسیر پوشه فلاتر رو پیدا کن
+
+اگر مثلاً فلاتر رو در مسیر زیر داری:
+
+C:\src\flutter
+
+
+مسیر فولدر bin داخلش مهمه:
+
+C:\src\flutter\bin
+
+✅ مرحله ۲: افزودن مسیر به PATH
+
+روی دکمه Start بزن و بنویس:
+
+Edit the system environment variables
+
+
+بعدش بازش کن.
+
+روی دکمه Environment Variables کلیک کن.
+
+در بخش System variables یا User variables، متغیر به اسم Path رو پیدا کن و Edit بزن.
+
+روی New کلیک کن و مسیر فلاتر رو اضافه کن:
+
+C:\src\flutter\bin
+
+
+OK بزن تا همه‌ی پنجره‌ها بسته بشن.
+
+✅ مرحله ۳: بررسی نهایی
+
+یک پنجره‌ی جدید Command Prompt یا PowerShell باز کن و بنویس:
+
+flutter --version
+
+
+باید نسخه‌ی فلاتر رو ببینی 🎉
+
+🍎 مک (macOS) و 🐧 لینوکس (Linux)
+✅ مرحله ۱: مسیر پوشه فلاتر
+
+فرض کنیم فلاتر در مسیر زیره:
+
+/Users/yourname/flutter
+
+
+(به‌جای yourname نام کاربری خودت رو بذار.)
+
+✅ مرحله ۲: اضافه کردن به PATH
+
+اگر از bash استفاده می‌کنی:
+
+فایل تنظیمات رو باز کن:
+
+nano ~/.bashrc
+
+
+یا اگه از Zsh استفاده می‌کنی:
+
+nano ~/.zshrc
+
+
+آخر فایل این خط رو اضافه کن:
+
+export PATH="$PATH:/Users/yourname/flutter/bin"
+
+
+فایل رو ذخیره کن و ببند (با Ctrl+O و Ctrl+X در nano).
+
+برای فعال شدن تغییرات، این دستور رو بزن:
+
+source ~/.bashrc
+
+
+یا برای Zsh:
+
+source ~/.zshrc
+
+✅ مرحله ۳: بررسی
+
+الان دستور زیر رو بزن:
+
+flutter --version
+
+
+اگر نصب و مسیر درست باشه، نسخه‌ی فلاتر رو نشون می‌ده ✅
